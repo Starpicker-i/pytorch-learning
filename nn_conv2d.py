@@ -1,3 +1,6 @@
+'''
+卷积层的应用
+'''
 import torch
 import torchvision
 from torch.utils.data import DataLoader
@@ -27,3 +30,4 @@ for data in dataloader:
     imgs, targets = data
     output = tudui(imgs)
     print(output.shape)
+    # torch.Size([64, 6, 30, 30])
